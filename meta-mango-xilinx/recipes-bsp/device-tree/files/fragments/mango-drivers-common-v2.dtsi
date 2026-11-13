@@ -1,0 +1,11 @@
+/ {
+	mb_mgmt0: mb-mgmt@440000000 {
+		compatible = "mangoboost,mgmt-v2";
+		status = "disabled";
+
+		reg = <0x4 0x40000000 0x0 0x04200000>; /* 66MB */
+
+		interrupts = <0 99 1>;
+		interrupt-parent = <&gic>;
+	};
+};

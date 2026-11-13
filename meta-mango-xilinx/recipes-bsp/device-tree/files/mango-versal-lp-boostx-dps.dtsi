@@ -1,0 +1,3 @@
+/include/ "fragments/versal-common.dtsi"
+/include/ "fragments/mango-drivers-common-v2.dtsi"
+/include/ "fragments/mango-drivers-mgmt.dtsi"

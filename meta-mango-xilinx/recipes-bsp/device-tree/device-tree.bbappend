@@ -6,6 +6,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/files:"
 SRC_URI += " \
     file://fragments/versal-common.dtsi \
     file://fragments/mango-drivers-common.dtsi \
+    file://fragments/mango-drivers-common-v2.dtsi \
     file://fragments/mango-drivers-bnic.dtsi \
     file://fragments/mango-drivers-mgmt.dtsi \
     file://fragments/mango-drivers-smi.dtsi \
@@ -13,6 +14,7 @@ SRC_URI += " \
     file://fragments/lpddr4-base.dtsi \
     file://mango-versal-lp-generic.dtsi \
     file://mango-versal-lp-boostx-base.dtsi \
+    file://mango-versal-lp-boostx-dps.dtsi \
 "
 
 # --- Machine-Specific DTSI Includes ---
@@ -21,6 +23,7 @@ SRC_URI += " \
 # A custom variable is used here which is then read by a python function.
 DTSI_FRAGMENTS:mango-versal-lp-generic = "mango-versal-lp-generic.dtsi"
 DTSI_FRAGMENTS:mango-versal-lp-boostx-base = "mango-versal-lp-boostx-base.dtsi"
+DTSI_FRAGMENTS:mango-versal-lp-boostx-dps = "mango-versal-lp-boostx-dps.dtsi"
 
 # This python function reads our custom DTSI_FRAGMENTS variable
 # and appends the necessary include directives to the common system-user.dtsi file.

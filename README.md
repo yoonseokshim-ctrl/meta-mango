@@ -40,6 +40,7 @@ The repository root is not a layer itself; it holds these sub-layers:
 | ------------------------- | -------------------------- |
 | `mango-versal-lp-generic` | MangoBoost Versal LP board |
 | `mango-versal-lp-boostx-base` | BoostX Base |
+| `mango-versal-lp-boostx-dps` | BoostX DPS |
 
 ## Build guide
 
